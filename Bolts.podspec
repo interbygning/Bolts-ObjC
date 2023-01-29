@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'Bolts'
-  s.version      = '1.9.0'
+  s.version      = '1.9.2'
   s.summary      = 'Bolts is a collection of low-level libraries designed to make developing mobile apps easier.'
   s.description  = <<-DESC
                     Bolts was designed by Parse and Facebook for our own internal use, and we have decided to open source these libraries to make them available to others. Using these libraries does not require using any Parse services. Nor do they require having a Parse or Facebook developer account.
@@ -20,8 +20,8 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
 
   s.subspec 'Tasks' do |ss|
-    ss.source_files = 'Bolts/Common/*.[hm]'
-    ss.public_header_files = 'Bolts/Common/*.h'
+    ss.source_files = 'Bolts/Bolts/Source/*.[hm]'
+    ss.public_header_files = 'Bolts/Bolts/Source/*.h'
   end
 
   s.subspec 'AppLinks' do |ss|
@@ -29,6 +29,7 @@ Pod::Spec.new do |s|
     ss.dependency 'Bolts/Tasks'
 
     ss.ios.source_files = 'Bolts/iOS/**/*.[hm]'
-    ss.ios.public_header_files = 'Bolts/iOS/*.h'
+    ss.ios.public_header_files = 'Bolts/iOS/Source/*.h'
+    ss.private_header_files = 'Bolts/iOS/Internal/*.h'
   end
 end

@@ -12,6 +12,7 @@
 
 #import "BFAppLink.h"
 #import "BFAppLinkTarget.h"
+#import "BFUtils.h"
 
 static const CGFloat BFMarginX = 8.5f;
 static const CGFloat BFMarginY = 8.5f;
@@ -244,8 +245,7 @@ static const CGFloat BFCloseButtonHeight = 12.0;
         return nil;
     }
 
-    NSString *format = NSLocalizedString(@"Touch to return to %1$@", @"Format for the string to return to a calling app.");
-
+    NSString *format =  NSLocalizedStringFromTableInBundle(@"Touch to return to %1$@", nil, BFUtils.packageBundle, @"Format for the string to return to a calling app.");
     return [NSString stringWithFormat:format, refererName];
 }
 

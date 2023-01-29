@@ -12,6 +12,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-NSString *const BoltsFrameworkVersionString = @"1.9.0";
+NSString *const BoltsFrameworkVersionString = @"1.9.2";
 
 NS_ASSUME_NONNULL_END
