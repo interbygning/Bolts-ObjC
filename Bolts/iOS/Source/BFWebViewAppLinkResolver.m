@@ -8,7 +8,6 @@
  *
  */
 
-#import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
 
 #import "BFWebViewAppLinkResolver.h"
@@ -58,30 +57,32 @@ static NSString *const BFWebViewAppLinkResolverShouldFallbackKey = @"should_fall
 
 @implementation BFWebViewAppLinkResolverWebViewDelegate
 
-- (void)webViewDidFinishLoad:(WKWebView *)webView {
+- (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation {
     if (self.didFinishLoad) {
         self.didFinishLoad(webView);
     }
 }
 
-- (void)webViewDidStartLoad:(WKWebView *)webView {
+- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(null_unspecified WKNavigation *)navigation
+{
+    
 }
 
-- (void)webView:(WKWebView *)webView didFailLoadWithError:(NSError *)error {
+- (void)webView:(WKWebView *)webView didFailNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error {
     if (self.didFailLoadWithError) {
         self.didFailLoadWithError(webView, error);
     }
 }
 
-- (BOOL)webView:(WKWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
     if (self.hasLoaded) {
         // Consider loading a second resource to be "success", since it indicates an inner frame
         // or redirect is happening. We can run the tag extraction script at this point.
         self.didFinishLoad(webView);
-        return NO;
     }
     self.hasLoaded = YES;
-    return YES;
+    
+    decisionHandler(WKNavigationActionPolicyAllow);
 }
 
 @end
@@ -173,13 +174,19 @@ static NSString *const BFWebViewAppLinkResolverShouldFallbackKey = @"should_fall
                                                    }
                                                };
                                                webView.navigationDelegate = listener;
+                                               webView.configuration.preferences.javaScriptEnabled = true;
                                                webView.hidden = YES;
-                                               [webView loadData:responseData
-                                                        MIMEType:response.MIMEType
-                                           characterEncodingName:response.textEncodingName
-                                                         baseURL:response.URL];
-                                               UIWindow *window = [UIApplication sharedApplication].windows.firstObject;
-                                               [window addSubview:webView];
+                                               if (@available(iOS 9.0, *)) {
+                                                [webView loadData:responseData
+                                                         MIMEType:response.MIMEType
+                                            characterEncodingName:response.textEncodingName
+                                                          baseURL:response.URL];
+
+                                                UIWindow *window = [UIApplication sharedApplication].windows.firstObject;
+                                                [window addSubview:webView];
+                                               } else {
+                                                    // Fallback on earlier versions
+                                               }
 
                                                return tcs.task;
                                            }];
@@ -223,7 +230,6 @@ static NSString *const BFWebViewAppLinkResolverShouldFallbackKey = @"should_fall
 }
 
 - (void)getALDataFromLoadedPage:(WKWebView *)webView completion:(void (^ _Nullable)(NSDictionary * _Nullable, NSError * _Nullable error))completionHandler {
-    // Run some JavaScript in the webview to fetch the meta tags.
     [webView evaluateJavaScript:BFWebViewAppLinkResolverTagExtractionJavaScript completionHandler:^(id result, NSError * error) {
         if (error == nil) {
             NSString *jsonString = result;

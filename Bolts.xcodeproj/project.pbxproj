@@ -3,18 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BC597372387FAE800CAC052 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC597312387F81D00CAC052 /* WebKit.framework */; };
-		0BC597382387FB0700CAC052 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC597312387F81D00CAC052 /* WebKit.framework */; };
-		0BC597392387FB6C00CAC052 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC597312387F81D00CAC052 /* WebKit.framework */; };
-		1D5D7DB81BE3CE8200FD67C7 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		1E9BF8DC18EA0CAD00514B1E /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BF8DB18EA0CAD00514B1E /* test.html */; };
 		1EC3016B18CDAA8400D06D07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1EC3016918CDAA8400D06D07 /* InfoPlist.strings */; };
 		1EC3016D18CDAA8400D06D07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC3016C18CDAA8400D06D07 /* main.m */; };
 		1EC3017118CDAA8400D06D07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC3017018CDAA8400D06D07 /* AppDelegate.m */; };
+		1EC3017318CDAA8400D06D07 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC3017218CDAA8400D06D07 /* Images.xcassets */; };
 		1EC3019118CDABCE00D06D07 /* AppLinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC3019018CDABCE00D06D07 /* AppLinkTests.m */; };
 		7C4C78AA2919C45900CF5A60 /* BFExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4C78972919C44600CF5A60 /* BFExecutor.m */; };
 		7C4C78AB2919C45900CF5A60 /* BFUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4C789B2919C44600CF5A60 /* BFUtils.m */; };
@@ -189,7 +186,6 @@
 		85D5138A18E4E45800D19D87 /* AppLinkReturnToRefererViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D5138918E4E45800D19D87 /* AppLinkReturnToRefererViewTests.m */; };
 		8E8C8EFB17F23E5F00E3F1C7 /* TaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9C3D1C17DE9F6500427E62 /* TaskTests.m */; };
 		8E8C8F2917F241FF00E3F1C7 /* TaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9C3D1C17DE9F6500427E62 /* TaskTests.m */; };
-		B9155944239F3ADC0065BF06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9155943239F3ADC0065BF06 /* LaunchScreen.storyboard */; };
 		F5AFCA081BA752770076E927 /* ExecutorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DC1A611B7A7F4000F491DC /* ExecutorTests.m */; };
 		F5AFCA0A1BA752770076E927 /* TaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9C3D1C17DE9F6500427E62 /* TaskTests.m */; };
 		F5AFCA0B1BA752770076E927 /* CancellationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C60AEC51ACF19F900747DD7 /* CancellationTests.m */; };
@@ -227,7 +223,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BC597312387F81D00CAC052 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		1D5D7DD31BE3CE8200FD67C7 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9BF8DB18EA0CAD00514B1E /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		1EC3016018CDAA8400D06D07 /* BoltsTestUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoltsTestUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -236,6 +231,7 @@
 		1EC3016C18CDAA8400D06D07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1EC3016F18CDAA8400D06D07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1EC3017018CDAA8400D06D07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1EC3017218CDAA8400D06D07 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1EC3019018CDABCE00D06D07 /* AppLinkTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppLinkTests.m; sourceTree = "<group>"; };
 		7C4C78962919C44600CF5A60 /* BFCancellationTokenSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFCancellationTokenSource.h; sourceTree = "<group>"; };
 		7C4C78972919C44600CF5A60 /* BFExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFExecutor.m; sourceTree = "<group>"; };
@@ -316,7 +312,6 @@
 		8E8C8F1917F241DA00E3F1C7 /* BoltsTests-OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BoltsTests-OSX.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9C3CE917DE9DE000427E62 /* libBolts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBolts.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9C3D1C17DE9F6500427E62 /* TaskTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTests.m; sourceTree = "<group>"; };
-		B9155943239F3ADC0065BF06 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5AFCA021BA752750076E927 /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AFCA131BA752770076E927 /* BoltsTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BoltsTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -326,8 +321,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BC597382387FB0700CAC052 /* WebKit.framework in Frameworks */,
-				1D5D7DB81BE3CE8200FD67C7 /* (null) in Frameworks */,
 				7CACE638291FD489003359B5 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,7 +357,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BC597372387FAE800CAC052 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +364,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BC597392387FB6C00CAC052 /* WebKit.framework in Frameworks */,
 				7CACE639291FD4EC003359B5 /* WebKit.framework in Frameworks */,
 				818ADC6C1BE1A80F00C8006C /* Bolts.framework in Frameworks */,
 			);
@@ -416,6 +407,7 @@
 			children = (
 				1EC3016F18CDAA8400D06D07 /* AppDelegate.h */,
 				1EC3017018CDAA8400D06D07 /* AppDelegate.m */,
+				1EC3017218CDAA8400D06D07 /* Images.xcassets */,
 				1EC3016718CDAA8400D06D07 /* Supporting Files */,
 			);
 			path = BoltsTestUI;
@@ -428,17 +420,8 @@
 				1EC3016918CDAA8400D06D07 /* InfoPlist.strings */,
 				1EC3016C18CDAA8400D06D07 /* main.m */,
 				1E9BF8DB18EA0CAD00514B1E /* test.html */,
-				B9155943239F3ADC0065BF06 /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6B0E34B22986DABA001734EA /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				0BC597312387F81D00CAC052 /* WebKit.framework */,
-			);
-			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		7C4C78942919C44600CF5A60 /* Bolts */ = {
@@ -636,7 +619,6 @@
 				1EC3016618CDAA8400D06D07 /* BoltsTestUI */,
 				8E9C3CEA17DE9DE000427E62 /* Products */,
 				7CACE635291FD47F003359B5 /* Frameworks */,
-				6B0E34B22986DABA001734EA /* Recovered References */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -1012,7 +994,7 @@
 		8E9C3CE117DE9DE000427E62 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1120;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Parse Inc.";
 				TargetAttributes = {
 					8E8C8F1817F241DA00E3F1C7 = {
@@ -1021,10 +1003,11 @@
 				};
 			};
 			buildConfigurationList = 8E9C3CE417DE9DE000427E62 /* Build configuration list for PBXProject "Bolts" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1054,7 +1037,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EC3016B18CDAA8400D06D07 /* InfoPlist.strings in Resources */,
-				B9155944239F3ADC0065BF06 /* LaunchScreen.storyboard in Resources */,
+				1EC3017318CDAA8400D06D07 /* Images.xcassets in Resources */,
 				1E9BF8DC18EA0CAD00514B1E /* test.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1324,8 +1307,6 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1338,7 +1319,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bolts.ios.testapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -1355,8 +1335,6 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -1366,7 +1344,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.bolts.ios.testapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -1473,8 +1450,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 			};
 			name = Debug;
 		};
@@ -1484,8 +1460,7 @@
 			buildSettings = {
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 			};
 			name = Release;
 		};
@@ -1494,11 +1469,7 @@
 			baseConfigurationReference = 81D646E51D2CA0E000690609 /* Bolts-macOS.xcconfig */;
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 			};
 			name = Debug;
 		};
@@ -1507,11 +1478,7 @@
 			baseConfigurationReference = 81D646E51D2CA0E000690609 /* Bolts-macOS.xcconfig */;
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 			};
 			name = Release;
 		};
