@@ -1,1 +1,2 @@
 2025-01-19 03:09:58 better error handling
+2025-03-01 12:11:01 fix encoding issue
