@@ -20,3 +20,4 @@
 2025-10-21 16:46:00 fix config bug
 2025-09-01 06:54:58 improve maintainability
 2025-04-27 03:10:06 refactor tests
+2025-05-26 11:52:25 fix crash issue
