@@ -56,3 +56,4 @@
 2025-02-17 16:44:44 update configs for prod
 2025-09-01 16:22:19 reformat code
 2025-04-28 20:00:57 update docs with examples
+2025-10-02 10:30:15 improve performance
