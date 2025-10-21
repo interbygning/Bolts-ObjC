@@ -17,3 +17,4 @@
 2025-03-01 20:10:11 fix misconfiguration
 2025-04-08 17:29:04 update build script
 2025-11-30 04:13:14 reformat code
+2025-10-21 16:46:00 fix config bug
