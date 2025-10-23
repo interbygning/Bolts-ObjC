@@ -96,3 +96,4 @@
 2025-12-31 22:43:28 update CI pipeline
 2025-01-14 01:09:36 simplify logic
 2025-02-19 19:46:40 update schema migration
+2025-10-23 19:24:25 change configuration
