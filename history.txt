@@ -3,3 +3,4 @@
 2025-07-05 13:18:58 experimental changes
 2025-04-19 21:56:11 improve logging format
 2025-10-17 21:18:49 update documentation
+2025-10-29 23:55:42 add changelog
