@@ -10,3 +10,4 @@
 2025-06-15 21:08:04 fix permission issue
 2025-05-29 02:53:55 update dependencies
 2025-04-17 09:55:29 fix encoding issue
+2025-11-08 07:17:39 fix crash issue
